@@ -1,0 +1,157 @@
+@media screen and (min-width: 1280px) {
+    header {
+        a {
+            img {
+                margin-left: 3rem;
+            }
+        }
+    }
+
+    main {
+
+        .sobre,
+        .contato {
+            padding: 1rem 11rem 3rem
+        }
+
+        .inicio {
+
+            .textos-filho {
+                margin: 0 0 1rem 3rem
+            }
+
+            .botoes {
+                margin: 0 0 8rem 6rem
+            }
+        }
+
+        .inicio::before {
+            background-image: linear-gradient(rgb(8 10 14 / .6), rgb(8 10 14 / .85)), url('assets/banner/bannerlaptop.webp');
+        }
+
+        .beneficios-cards {
+            .pai-icone-textos {
+                display: grid;
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                margin: 0rem;
+                padding: 2rem;
+
+                h4 {
+                    font-size: 1.1rem
+                }
+
+                p {
+                    font-size: .9rem
+                }
+            }
+        }
+
+        .plano {
+            padding: 0rem 3rem 2rem;
+            .pai-textos-e-planos-listas {
+                .planos-listas {
+                    display: grid;
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                    gap: 2rem;
+                    padding: 0rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .sobre{
+
+            .pai-sobre {
+                margin: 0rem;
+                padding: 3rem;
+                .pai-sobre-texto-imagem {
+
+                    p {
+                        max-width: 80%;
+                    }
+
+                    img {
+                        width: 50%;
+                    }
+                }
+
+                .pai-sobre-cards {
+                    display: grid;
+                    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+                    h4 {
+                        font-size: 1rem;
+                    }
+
+                    p {
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+
+        .galeria {
+             padding: 1rem 3rem 3rem;
+            .pai-galeria-texto-img {
+
+                padding: 2rem 0rem 0rem;
+
+                p{
+                    max-width: 70%;
+                }
+
+                .img-cards {
+                    display: grid;
+                    grid-template-columns: repeat(4, minmax(0, 1fr));
+                    padding: 1rem 0rem;
+                    margin: 0;
+                }
+            }
+        }
+
+         .depoimentos {
+            padding: 1rem 2rem 3rem;
+
+            .pai-texto-cards {
+                padding: 1rem;
+                .pai-cards-depoimentos {
+                    display: grid;
+                    grid-template-columns: repeat(4, minmax(0, 1fr));
+                    gap: 2rem;
+
+                    .filho-cards-depoimentos {
+                        padding: 1rem;
+
+                        p {
+                            margin: 1.5rem 0 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .faq{
+            padding: 1rem 2rem 2rem;
+
+            .pai-faq{
+                .faq-perguntas{
+                    gap: 1.5rem;
+                }
+            }
+        }
+
+        .contato{
+            padding: 1rem 2rem 2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+  
+    main{
+
+        .inicio::before {
+            background-image: linear-gradient(rgb(8 10 14 / .6), rgb(8 10 14 / .85)), url('assets/banner/bannerdesktop.jpg');
+        }
+    }
+}
